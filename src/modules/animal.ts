@@ -1,13 +1,19 @@
 class Animal {
+    //attributes
   name: string;
   age: number;
   spieces: string;
   isKind: boolean = true;
-  constructor(name: string, age: number, spieces: string) {
+  attributIsNull: null = null; //useless attribute
+
+  //Konstriuktor
+  constructor(name: string, age: number, species: string, isKind: boolean = true) {
       this.name = name;
       this.age = age;
-      this.spieces = spieces;
+      this.spieces = species;
+      this.isKind = isKind;
   }
+
   makeSound(): void {
       console.log(`${this.name} makes a sound.`);
   }
