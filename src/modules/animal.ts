@@ -14,12 +14,17 @@ class Animal {
       this.isKind = isKind;
   }
 
-  makeSound(): void {
-      console.log(`${this.name} makes a sound.`);
+  makeSound(): string {
+      return `${this.name} makes a sound.`;
   }
 
-  info(): void {
-      console.log(`${this.name} is a ${this.age} year old ${this.spieces}.`);
+  info(): string {
+      return `${this.name} is a ${this.age} year old ${this.spieces}.`;
+  }
+
+  changeName(newName: string): string {
+      this.name = newName;
+      return this.name;
   }
 }
 

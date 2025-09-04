@@ -16,10 +16,14 @@ class Animal {
         this.isKind = isKind;
     }
     makeSound() {
-        console.log(`${this.name} makes a sound.`);
+        return `${this.name} makes a sound.`;
     }
     info() {
-        console.log(`${this.name} is a ${this.age} year old ${this.spieces}.`);
+        return `${this.name} is a ${this.age} year old ${this.spieces}.`;
+    }
+    changeName(newName) {
+        this.name = newName;
+        return this.name;
     }
 }
 exports.Animal = Animal;
