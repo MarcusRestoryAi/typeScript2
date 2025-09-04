@@ -14,15 +14,16 @@ class Animal {
       this.isKind = isKind;
   }
 
-  makeSound(): string {
+  makeSound(): string
+  {
       return `${this.name} makes a sound.`;
   }
 
-  info(): string {
+        info(): string {
       return `${this.name} is a ${this.age} year old ${this.spieces}.`;
   }
 
-  changeName(newName: string): string {
+  changeName (newName: string): string {
       this.name = newName;
       return this.name;
   }
